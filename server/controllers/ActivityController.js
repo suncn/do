@@ -6,4 +6,5 @@ exports.findLast = (req, res, next) => {
   Activity.findLast(userId).then(activity => {
     res.status(200).json({ result: activity });
   }, next);
+  
 };
